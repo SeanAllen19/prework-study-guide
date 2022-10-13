@@ -12,7 +12,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
-      <h2>✨ Open the Console to See What's Happening ✨</h2>
+      <h2>✨Open the Console to See What's Happening✨</h2>
     </header>
     <main>
       <!-- Student code goes here -->
@@ -20,8 +20,8 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user.</li>
+          <li><b>head</b> element contains information about the webpage.</li>
+          <li><b>body</b> element represents the visible content shown to the user.</li>
         </ul>
       </section>
  
@@ -39,8 +39,38 @@
         <h2>Git</h2>
         <ul>
           <li>git status: checks what branch we are currently on</li>
+          <li>git add: add a file as it looks now to your next commit (stage)</li>
+          <li>git commit -m "(Detailed message)": commit your staged content as a new commit snapshot </li>
+          <li>git checkout: switch to another branch and check it out into your working directory</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>git push [alias] [branch]: Transmit local branch commits to the remote repository branch </li>
+          <li>git pull: fetch and merge any commits from the tracking remote branch</li>
         </ul>
+        <br> <!--line break-->
+        <h3>Git Work Flow</h3>
+        <br> <!--line break-->
+          
+          <ol>
+          <li>In the command line, make sure to be in the right directory. Use the cd command in the CLI to get to the proper directory (cd bootcamp/prework-study-guide)</li>
+          <li>Once in the proper directory use the "code ."  Command  to start working in the project. Make sure to look at the files and make sure that all the files are there.</li>
+          <li>Check the status of what branch you are working on. To switch to a different branch so you don’t change the MAIN branch. Use the command: git checkout -b (feature/starter-code)  (The feature/starter-code is the name of the new branch. We have added the prefix, feature, to indicate that it is a feature. It is good practice to name the branches for the feature that will be developed by them to help indicate the purpose of each branch.)</li>
+          <li>Use git status to make sure that you are working on the correct working branch. 
+          If all is according to plan, use git add -A, to add all the modifications from the working branch to the staging area. The -A flag indicates that we want to add all changes. </li>
+          <li>Before we push this up to our repo, we should double-check if our local branch is in sync with the base branch in GitHub. So let’s pull down any changes from the base branch with the command “ git pull origin main ”. We identify a Git command with the git keyword. Then use the pull command to receive a branch's modifications into the local environment. The origin keyword indicates the source of the pull will be in the GitHub repo. The main keyword indicates the branch. In our case, we are receiving a branch called main from the GitHub repository. It is important to always do a git pull to make sure that you have the latest version of the project on your local computer before you start to work. Otherwise, you might be working on outdated code!</li>
+          <li>Now our local branch has synced with the remote base branch, let's push our changes to the remote branch by using the following command:  git push origin feature/starter-code</li>
+          </ol> 
+          <br>
+
+          <!--TLDR ordered list-->
+          <h4>TL/DR</h4>
+          <ol class="tldr">
+          <li>Once in the proper working directory on your computer: </li>
+          <li>git add -A</li>
+          <li>git commit -m “your message here”</li>
+          <li>git pull origin main</li>
+          <li>git push origin feature/add-js</li>
+          </ol>
+
       </section>
    
       <section class="card" id="javascript-section">
